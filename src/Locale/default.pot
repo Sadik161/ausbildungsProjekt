@@ -1,0 +1,524 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-09-20 13:49+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ClubsController.php:58
+#: Controller/ClubsController.php:84
+msgid "The club has been saved."
+msgstr ""
+
+#: Controller/ClubsController.php:62
+#: Controller/ClubsController.php:88
+msgid "The club could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ClubsController.php:107
+msgid "The club has been deleted."
+msgstr ""
+
+#: Controller/ClubsController.php:109
+msgid "The club could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CoachesController.php:55
+#: Controller/CoachesController.php:79
+msgid "The coach has been saved."
+msgstr ""
+
+#: Controller/CoachesController.php:59
+#: Controller/CoachesController.php:83
+msgid "The coach could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CoachesController.php:100
+msgid "The coach has been deleted."
+msgstr ""
+
+#: Controller/CoachesController.php:102
+msgid "The coach could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/PlayersController.php:58
+#: Controller/PlayersController.php:83
+msgid "The player has been saved."
+msgstr ""
+
+#: Controller/PlayersController.php:62
+#: Controller/PlayersController.php:87
+msgid "The player could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PlayersController.php:105
+msgid "The player has been deleted."
+msgstr ""
+
+#: Controller/PlayersController.php:107
+msgid "The player could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TeamsController.php:55
+#: Controller/TeamsController.php:79
+msgid "The team has been saved."
+msgstr ""
+
+#: Controller/TeamsController.php:59
+#: Controller/TeamsController.php:83
+msgid "The team could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TeamsController.php:100
+msgid "The team has been deleted."
+msgstr ""
+
+#: Controller/TeamsController.php:102
+msgid "The team could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:75
+#: Controller/UsersController.php:99
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:79
+#: Controller/UsersController.php:103
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:120
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:122
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:134
+msgid "You are now logged in"
+msgstr ""
+
+#: Controller/UsersController.php:137
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/UsersController.php:165
+msgid "Die Sprache ist nicht verfügbar"
+msgstr ""
+
+#: Template/Clubs/add.ctp:9
+#: Template/Clubs/edit.ctp:9
+msgid "List Clubs"
+msgstr ""
+
+#: Template/Clubs/add.ctp:15
+msgid "Add Club"
+msgstr ""
+
+#: Template/Clubs/add.ctp:31
+#: Template/Clubs/edit.ctp:40
+#: Template/Coaches/add.ctp:23
+#: Template/Coaches/edit.ctp:35
+#: Template/Players/add.ctp:26
+#: Template/Players/edit.ctp:38
+#: Template/Teams/add.ctp:32
+#: Template/Teams/edit.ctp:41
+#: Template/Users/add.ctp:23
+#: Template/Users/edit.ctp:28
+msgid "Submit"
+msgstr ""
+
+#: Template/Clubs/edit.ctp:10
+#: Template/Clubs/view.ctp:10
+#: Template/Coaches/index.ctp:10
+#: Template/Players/index.ctp:10
+#: Template/Teams/edit.ctp:9
+#: Template/Teams/view.ctp:9
+msgid "List Teams"
+msgstr ""
+
+#: Template/Clubs/edit.ctp:12
+#: Template/Clubs/index.ctp:32
+#: Template/Clubs/view.ctp:37
+#: Template/Coaches/edit.ctp:11
+#: Template/Coaches/index.ctp:37
+#: Template/Coaches/view.ctp:58
+#: Template/Players/edit.ctp:11
+#: Template/Players/index.ctp:38
+#: Template/Teams/edit.ctp:11
+#: Template/Teams/index.ctp:43
+#: Template/Teams/view.ctp:62
+#: Template/Teams/view.ctp:91
+#: Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:31
+msgid "Delete"
+msgstr ""
+
+#: Template/Clubs/edit.ctp:15
+#: Template/Clubs/index.ctp:32
+#: Template/Clubs/view.ctp:37
+#: Template/Coaches/edit.ctp:14
+#: Template/Coaches/index.ctp:37
+#: Template/Coaches/view.ctp:11
+#: Template/Coaches/view.ctp:58
+#: Template/Players/edit.ctp:14
+#: Template/Players/index.ctp:38
+#: Template/Players/view.ctp:11
+#: Template/Teams/edit.ctp:14
+#: Template/Teams/index.ctp:43
+#: Template/Teams/view.ctp:11
+#: Template/Teams/view.ctp:62
+#: Template/Teams/view.ctp:91
+#: Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:31
+#: Template/Users/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Clubs/edit.ctp:24
+#: Template/Coaches/edit.ctp:22
+#: Template/Coaches/view.ctp:10
+msgid "Edit Coach"
+msgstr ""
+
+#: Template/Clubs/index.ctp:9
+msgid "Add Clubs"
+msgstr ""
+
+#: Template/Clubs/index.ctp:13
+#: Template/Clubs/view.ctp:14
+msgid "Clubs"
+msgstr ""
+
+#: Template/Clubs/index.ctp:20
+#: Template/Clubs/view.ctp:23
+#: Template/Coaches/index.ctp:24
+#: Template/Coaches/view.ctp:45
+#: Template/Players/index.ctp:24
+#: Template/Teams/index.ctp:29
+#: Template/Teams/view.ctp:51
+#: Template/Teams/view.ctp:79
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9
+#: Template/Users/index.ctp:20
+#: Template/Users/view.ctp:9
+msgid "Actions"
+msgstr ""
+
+#: Template/Clubs/index.ctp:30
+#: Template/Clubs/view.ctp:35
+#: Template/Coaches/index.ctp:35
+#: Template/Coaches/view.ctp:56
+#: Template/Players/index.ctp:36
+#: Template/Teams/index.ctp:41
+#: Template/Teams/view.ctp:60
+#: Template/Teams/view.ctp:89
+#: Template/Users/index.ctp:29
+msgid "View"
+msgstr ""
+
+#: Template/Clubs/index.ctp:31
+#: Template/Clubs/view.ctp:36
+#: Template/Coaches/index.ctp:36
+#: Template/Coaches/view.ctp:57
+#: Template/Players/index.ctp:37
+#: Template/Teams/index.ctp:42
+#: Template/Teams/view.ctp:61
+#: Template/Teams/view.ctp:90
+#: Template/Users/index.ctp:30
+msgid "Edit"
+msgstr ""
+
+#: Template/Clubs/index.ctp:40
+#: Template/Clubs/view.ctp:45
+#: Template/Coaches/index.ctp:45
+#: Template/Players/index.ctp:46
+#: Template/Teams/index.ctp:56
+#: Template/Users/index.ctp:39
+msgid "first"
+msgstr ""
+
+#: Template/Clubs/index.ctp:41
+#: Template/Clubs/view.ctp:46
+#: Template/Coaches/index.ctp:46
+#: Template/Players/index.ctp:47
+#: Template/Teams/index.ctp:57
+#: Template/Users/index.ctp:40
+msgid "previous"
+msgstr ""
+
+#: Template/Clubs/index.ctp:43
+#: Template/Clubs/view.ctp:48
+#: Template/Coaches/index.ctp:48
+#: Template/Players/index.ctp:49
+#: Template/Teams/index.ctp:59
+#: Template/Users/index.ctp:42
+msgid "next"
+msgstr ""
+
+#: Template/Clubs/index.ctp:44
+#: Template/Clubs/view.ctp:49
+#: Template/Coaches/index.ctp:49
+#: Template/Players/index.ctp:50
+#: Template/Teams/index.ctp:60
+#: Template/Users/index.ctp:43
+msgid "last"
+msgstr ""
+
+#: Template/Clubs/index.ctp:46
+#: Template/Clubs/view.ctp:51
+#: Template/Coaches/index.ctp:51
+#: Template/Players/index.ctp:52
+#: Template/Teams/index.ctp:62
+#: Template/Users/index.ctp:45
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Clubs/view.ctp:9
+#: Template/Coaches/edit.ctp:9
+#: Template/Coaches/view.ctp:9
+#: Template/Teams/index.ctp:10
+msgid "List Coaches"
+msgstr ""
+
+#: Template/Coaches/add.ctp:10
+msgid "Add Coach"
+msgstr ""
+
+#: Template/Coaches/index.ctp:9
+msgid "New Coach"
+msgstr ""
+
+#: Template/Coaches/index.ctp:11
+#: Template/Players/index.ctp:11
+#: Template/Teams/add.ctp:10
+msgid "Add Team"
+msgstr ""
+
+#: Template/Coaches/index.ctp:16
+msgid "Coaches"
+msgstr ""
+
+#: Template/Coaches/view.ctp:11
+msgid "Delete Coach"
+msgstr ""
+
+#: Template/Coaches/view.ctp:18
+#: Template/Players/view.ctp:18
+#: Template/Teams/view.ctp:48
+#: Template/Teams/view.ctp:75
+msgid "Name"
+msgstr ""
+
+#: Template/Coaches/view.ctp:22
+#: Template/Coaches/view.ctp:39
+#: Template/Players/view.ctp:30
+#: Template/Teams/view.ctp:26
+#: Template/Teams/view.ctp:47
+#: Template/Teams/view.ctp:74
+#: Template/Users/view.ctp:28
+msgid "Id"
+msgstr ""
+
+#: Template/Coaches/view.ctp:26
+#: Template/Teams/view.ctp:50
+#: Template/Teams/view.ctp:76
+msgid "Team Id"
+msgstr ""
+
+#: Template/Coaches/view.ctp:30
+#: Template/Teams/view.ctp:49
+msgid "Entered"
+msgstr ""
+
+#: Template/Coaches/view.ctp:35
+msgid "Related Teams"
+msgstr ""
+
+#: Template/Coaches/view.ctp:40
+#: Template/Teams/view.ctp:18
+msgid "Youth"
+msgstr ""
+
+#: Template/Coaches/view.ctp:41
+#: Template/Teams/view.ctp:30
+msgid "Coach Id"
+msgstr ""
+
+#: Template/Coaches/view.ctp:42
+#: Template/Teams/view.ctp:34
+msgid "Total Players"
+msgstr ""
+
+#: Template/Coaches/view.ctp:43
+#: Template/Teams/view.ctp:22
+msgid "Time"
+msgstr ""
+
+#: Template/Coaches/view.ctp:44
+#: Template/Teams/view.ctp:38
+msgid "Field"
+msgstr ""
+
+#: Template/Layout/default.ctp:46
+msgid "TSG Harsewinkel"
+msgstr ""
+
+#: Template/Layout/default.ctp:56
+msgid "Abteilung"
+msgstr ""
+
+#: Template/Layout/default.ctp:59
+msgid "Spieler"
+msgstr ""
+
+#: Template/Layout/error.ctp:36
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:44
+msgid "Back"
+msgstr ""
+
+#: Template/Players/add.ctp:10
+msgid "Add Player"
+msgstr ""
+
+#: Template/Players/edit.ctp:9
+#: Template/Players/view.ctp:9
+msgid "List Players"
+msgstr ""
+
+#: Template/Players/edit.ctp:22
+msgid "Edit Player"
+msgstr ""
+
+#: Template/Players/index.ctp:9
+msgid "New Player"
+msgstr ""
+
+#: Template/Players/index.ctp:15
+msgid "Players"
+msgstr ""
+
+#: Template/Players/view.ctp:10
+msgid "Edit this Player"
+msgstr ""
+
+#: Template/Players/view.ctp:11
+msgid "Delete this Player"
+msgstr ""
+
+#: Template/Players/view.ctp:22
+msgid "Team"
+msgstr ""
+
+#: Template/Players/view.ctp:26
+#: Template/Teams/view.ctp:78
+msgid "Position"
+msgstr ""
+
+#: Template/Players/view.ctp:34
+#: Template/Teams/view.ctp:77
+msgid "Joined"
+msgstr ""
+
+#: Template/Teams/edit.ctp:22
+#: Template/Teams/view.ctp:10
+msgid "Edit Team"
+msgstr ""
+
+#: Template/Teams/index.ctp:9
+msgid "New Team"
+msgstr ""
+
+#: Template/Teams/index.ctp:20
+msgid "Teams"
+msgstr ""
+
+#: Template/Teams/view.ctp:11
+msgid "Delete Team"
+msgstr ""
+
+#: Template/Teams/view.ctp:43
+msgid "Related Coaches"
+msgstr ""
+
+#: Template/Teams/view.ctp:70
+msgid "Related Players"
+msgstr ""
+
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr ""
+
+#: Template/Users/add.ctp:16
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:22
+#: Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/home.ctp:3
+msgid "English"
+msgstr ""
+
+#: Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr ""
+
+#: Template/Users/index.ctp:14
+msgid "Users"
+msgstr ""
+
+#: Template/Users/login.ctp:10
+msgid "Please enter your username and password"
+msgstr ""
+
+#: Template/Users/login.ctp:20
+msgid "Login"
+msgstr ""
+
+#: Template/Users/register.ctp:3
+#: Template/Users/register.ctp:8
+msgid "Register"
+msgstr ""
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/view.ctp:20
+msgid "Username"
+msgstr ""
+
+#: Template/Users/view.ctp:24
+msgid "Password"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
