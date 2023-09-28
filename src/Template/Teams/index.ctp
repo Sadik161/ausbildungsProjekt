@@ -6,8 +6,8 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-        <?= $this->Html->link(__('New Team'), ['action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
-        <?= $this->Html->link(__('List Coaches'), ['controller' => 'coaches', 'action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
+        <?= $this->Html->link(__('Neue Mannschaft hinzufügen'), ['action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
+        <?= $this->Html->link(__('Liste der Trainer'), ['controller' => 'coaches', 'action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
 	</ul>
 </nav>
 <style>
@@ -38,9 +38,9 @@
                 <td><?= h($team->time) ?></td>
                 <td><?= $this->Number->format($team->field) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $team->id], ['class' => 'btn btn-primary btn-sm']) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $team->id], ['class' => 'btn btn-warning btn-sm']) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $team->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $team->id)]) ?>
+                    <?= $this->Html->link(__('Ansehen'), ['action' => 'view', $team->id], ['class' => 'btn btn-primary btn-sm']) ?>
+                    <?= $this->Html->link(__('Bearbeiten'), ['action' => 'edit', $team->id], ['class' => 'btn btn-warning btn-sm']) ?>
+                    <?= $this->Form->postLink(__('Löschen'), ['action' => 'delete', $team->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $team->id)]) ?>
                 </td>
                 <td>
                     <a href="<?php echo $team['team_link']; ?>" target="_blank">

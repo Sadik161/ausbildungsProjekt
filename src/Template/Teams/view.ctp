@@ -6,9 +6,9 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-		<?= $this->Html->link(__('List Teams'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
-		<?= $this->Html->link(__('Edit Team'), ['action' => 'edit', $team->id], ['class' => 'btn btn-warning mt-3']) ?>
-		<?= $this->Form->postLink(__('Delete Team'), ['action' => 'delete', $team->id], ['class' => 'btn btn-danger mt-3'], ['confirm' => __('Are you sure you want to delete # {0}?', $team->id)]) ?>
+		<?= $this->Html->link(__('Liste der Mannschaften'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
+		<?= $this->Html->link(__('Mannschaft bearbeiten'), ['action' => 'edit', $team->id], ['class' => 'btn btn-warning mt-3']) ?>
+		<?= $this->Form->postLink(__('Diese Mannschaft löschen'), ['action' => 'delete', $team->id], ['class' => 'btn btn-danger mt-3'], ['confirm' => __('Are you sure you want to delete # {0}?', $team->id)]) ?>
 	</ul>
 </nav>
 <div class="teams view large-9 medium-8 columns content">
@@ -40,7 +40,7 @@
 		</tr>
 	</table>
 	<div class="related">
-		<h4><?= __('Related Coaches') ?></h4>
+		<h4><?= __('Trainer') ?></h4>
 		<?php if (!empty($team->coaches)): ?>
 		<table cellpadding="0" cellspacing="0" class="table table-striped">
 			<tr>
@@ -55,11 +55,11 @@
 				<td><?= h($coaches->id) ?></td>
 				<td><?= h($coaches->name) ?></td>
 				<td><?= h($coaches->entered) ?></td>
-				<td><?= h($coaches->team_id) ?></td>
+				<td><?= h($team->youth) ?></td>
 				<td class="actions">
-					<?= $this->Html->link(__('View'), ['controller' => 'Coaches', 'action' => 'view', $coaches->id], ['class' => 'btn btn-primary btn-sm']) ?>
-					<?= $this->Html->link(__('Edit'), ['controller' => 'Coaches', 'action' => 'edit', $coaches->id], ['class' => 'btn btn-warning btn-sm']) ?>
-					<?= $this->Form->postLink(__('Delete'), ['controller' => 'Coaches', 'action' => 'delete', $coaches->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $coaches->id)]) ?>
+					<?= $this->Html->link(__('Ansehen'), ['controller' => 'Coaches', 'action' => 'view', $coaches->id], ['class' => 'btn btn-primary btn-sm']) ?>
+					<?= $this->Html->link(__('Bearbeiten'), ['controller' => 'Coaches', 'action' => 'edit', $coaches->id], ['class' => 'btn btn-warning btn-sm']) ?>
+					<?= $this->Form->postLink(__('Löschen'), ['controller' => 'Coaches', 'action' => 'delete', $coaches->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $coaches->id)]) ?>
 				</td>
 			</tr>
 			<?php endforeach; ?>
@@ -67,7 +67,7 @@
 		<?php endif; ?>
 	</div>
 	<div class="related">
-		<h4><?= __('Related Players') ?></h4>
+		<h4><?= __('Kader') ?></h4>
 		<?php if (!empty($team->players)): ?>
 		<table cellpadding="0" cellspacing="0" class="table table-striped">
 			<tr>
@@ -82,13 +82,13 @@
 			<tr>
 				<td><?= h($players->id) ?></td>
 				<td><?= h($players->name) ?></td>
-				<td><?= h($players->team_id) ?></td>
+				<td><?= h($team->youth) ?></td>
 				<td><?= h($players->joined) ?></td>
 				<td><?= h($players->position) ?></td>
 				<td class="actions">
-					<?= $this->Html->link(__('View'), ['controller' => 'Players', 'action' => 'view', $players->id], ['class' => 'btn btn-primary btn-sm']) ?>
-					<?= $this->Html->link(__('Edit'), ['controller' => 'Players', 'action' => 'edit', $players->id], ['class' => 'btn btn-warning btn-sm']) ?>
-					<?= $this->Form->postLink(__('Delete'), ['controller' => 'Players', 'action' => 'delete', $players->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $players->id)]) ?>
+					<?= $this->Html->link(__('Ansehen'), ['controller' => 'Players', 'action' => 'view', $players->id], ['class' => 'btn btn-primary btn-sm']) ?>
+					<?= $this->Html->link(__('Bearbeiten'), ['controller' => 'Players', 'action' => 'edit', $players->id], ['class' => 'btn btn-warning btn-sm']) ?>
+					<?= $this->Form->postLink(__('Löschen'), ['controller' => 'Players', 'action' => 'delete', $players->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $players->id)]) ?>
 				</td>
 			</tr>
 			<?php endforeach; ?>

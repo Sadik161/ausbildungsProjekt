@@ -6,9 +6,9 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-		<?= $this->Html->link(__('New Player'), ['action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
-		<?= $this->Html->link(__('List Teams'), ['controller' => 'Teams', 'action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
-		<?= $this->Html->link(__('Add Team'), ['controller' => 'Teams', 'action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
+		<?= $this->Html->link(__('Neuer Spieler'), ['action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
+		<?= $this->Html->link(__('Jugend'), ['controller' => 'Teams', 'action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
+		<?= $this->Html->link(__('Mannschaft hinzufügen'), ['controller' => 'Teams', 'action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
 	</ul>
 </nav>
 <div class="players index large-9 medium-8 columns content">
@@ -37,9 +37,9 @@
 					<?php endif; ?>
 				<td><?= h($player->position) ?></td>
 				<td class="actions">
-					<?= $this->Html->link(__('View'), ['action' => 'view', $player->id], ['class' => 'btn btn-primary btn-sm']) ?>
-					<?= $this->Html->link(__('Edit'), ['action' => 'edit', $player->id], ['class' => 'btn btn-warning btn-sm']) ?>
-					<?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $player->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $player->id)]) ?>
+					<?= $this->Html->link(__('Ansehen'), ['action' => 'view', $player->id], ['class' => 'btn btn-primary btn-sm']) ?>
+					<?= $this->Html->link(__('Bearbeiten'), ['action' => 'edit', $player->id], ['class' => 'btn btn-warning btn-sm']) ?>
+					<?= $this->Form->postLink(__('Löschen'), ['action' => 'delete', $player->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $player->id)]) ?>
 				</td>
 			</tr>
 			<?php endforeach; ?>

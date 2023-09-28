@@ -46,7 +46,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		</a>
 		<?php echo $this->Html->link(__('TSG Harsewinkel'), ['controller' => 'users', 'action' => 'home'], [
 			'class' => 'logo d-flex justify-content-center text-center', 
-			'style' => 'text-decoration: none; color: black; font-size: 1.5rem;
+			'style' => 'text-decoration: none; color: black; font-size: 2rem;
 						font-weight: bold;
 						letter-spacing: 2px;
 						text-transform: uppercase;
@@ -61,7 +61,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					'style' => 'text-decoration: none; color: black',
 					'aria-current' => 'page'
 				]); ?>
-				<?= $this->Html->link('Clubs', '/clubs/index', [
+				<?= $this->Html->link('Vereine', '/clubs/index', [
 					'class' => 'nav-link',
 					'style' => 'text-decoration: none; color: black',
 					'aria-current' => 'page'
@@ -74,7 +74,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 						<li><a class="dropdown-item" href="/Players/index"><?=__('Spieler')?></a></li>
 						<li><a class="dropdown-item" href="/teams/index">Mannschaft</a></li>
 						<li><a class="dropdown-item" href="/coaches/index">Trainer</a></li>
-						<li><a class="dropdown-item" href="/clubs/index">Clubs</a></li>
+						<li><a class="dropdown-item" href="/clubs/index">Vereine</a></li>
 					</ul>
 				</div>
 				<?php if ($this->request->session()->read('Auth.User')): ?>

@@ -6,14 +6,14 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-		<?= $this->Html->link(__('List Clubs'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
+		<?= $this->Html->link(__('Liste der Vereine'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
 	</ul>
 </nav>
 <div class="clubs form large-9 medium-8 columns content">
 	<?= $this->Form->create($club) ?>
 	<fieldset>
 		<div class="card">
-			<legend class="card-header"><?= __('Add Club') ?></legend>
+			<legend class="card-header"><?= __('Neues Verein erstellen') ?></legend>
 			<ul class="list-group list-group-flush" style="box-sizing: border-box; width: 95%">
 				<ul> <?php echo $this->Form->control(('name'), ['class' => 'form-control', 'label' => ['class' => 'form-label']]); ?></ul>
 				<ul> <?php echo $this->Form->control(('adress'), ['class' => 'form-control', 'label' => ['text' => 'Adresse', 'class' => 'form-label']]); ?></ul>
@@ -22,6 +22,6 @@
 			</ul>
 		</div>
 	</fieldset>
-	<?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success']) ?>
+	<?= $this->Form->button(__('Verein hinzufügen'), ['class' => 'btn btn-success']) ?>
 	<?= $this->Form->end() ?>
 </div>

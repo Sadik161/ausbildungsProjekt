@@ -6,18 +6,18 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-        <?= $this->Html->link(__('Add Clubs'), ['action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
+        <?= $this->Html->link(__('Verein hinzufügen'), ['action' => 'add'], ['class' => 'btn btn-primary mt-3']) ?>
 	</ul>
 </nav>
 <div class="clubs index large-9 medium-8 columns content">
-    <h3><?= __('Clubs') ?></h3>
+    <h3><?= __('Vereine') ?></h3>
     <table cellpadding="0" cellspacing="0" class="table table-striped">
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('adress') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><?= __('Ansichten') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -27,9 +27,9 @@
                 <td><?= $this->Html->link($club->name, ['action' => 'view', $club->id]) ?></td>
                 <td><?= h($club->adress) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $club->id], ['class' => 'btn btn-primary btn-sm']) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $club->id], ['class' => 'btn btn-warning btn-sm']) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $club->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $club->id)]) ?>
+                    <?= $this->Html->link(__('Ansehen'), ['action' => 'view', $club->id], ['class' => 'btn btn-primary btn-sm']) ?>
+                    <?= $this->Html->link(__('Bearbeiten'), ['action' => 'edit', $club->id], ['class' => 'btn btn-warning btn-sm']) ?>
+                    <?= $this->Form->postLink(__('Löschen'), ['action' => 'delete', $club->id], ['class' => 'btn btn-danger btn-sm'], ['confirm' => __('Are you sure you want to delete # {0}?', $club->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

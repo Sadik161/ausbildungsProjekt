@@ -19,18 +19,14 @@
 <div class="coaches form large-9 medium-8 columns content">
 	<?= $this->Form->create($coach) ?>
 	<fieldset>
-		<legend><?= __('Edit Coach') ?></legend>
-		<table class="table">
-			<tr>
-				<td> <?php echo $this->Form->control('name'); ?></td>
-			</tr>
-			<tr>
-				<td> <?php echo $this->Form->control('entered', ['empty' => true]);?></td>
-			</tr>
-			<tr>
-				<td> <?php echo $this->Form->control('team_id'); ?></td>
-			</tr>
-		</table>
+		<div class="card">
+			<legend class="card-header"><?= __('Edit Coach') ?></legend>
+			<ul class="list-group list-group-flush" style="box-sizing: border-box; width: 95%">
+				<ul> <?php echo $this->Form->control(('name'), ['class' => 'form-control', 'label' => ['class' => 'form-label']]); ?></ul>
+				<ul> <?php echo $this->Form->control('entered', ['empty' => true]);?></ul>
+				<ul> <?php  echo $this->Form->control('team_id', ['options' => $teams, 'empty' => true, 'class' => 'form-control', 'label' => ['text' => 'Mannschaft', 'class' => 'form-label']]);?></ul>
+			</ul>
+		</div>
 	</fieldset>
 	<?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success']) ?>
 	<?= $this->Form->end() ?>
