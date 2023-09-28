@@ -16,9 +16,9 @@
 			<legend class="card-header"><?= __('Add Club') ?></legend>
 			<ul class="list-group list-group-flush" style="box-sizing: border-box; width: 95%">
 				<ul> <?php echo $this->Form->control(('name'), ['class' => 'form-control', 'label' => ['class' => 'form-label']]); ?></ul>
-				<ul> <?php echo $this->Form->control(('adress'), ['class' => 'form-control', 'label' => ['class' => 'form-label']]); ?></ul>
-				<ul> <?php echo $this->Form->control('coach_id', ['class' => 'form-select',  'empty' => true]); ?></ul>
-				<ul class="mb-2"> <?php echo $this->Form->control('youth', ['class' => 'form-select',  'empty' => true]); ?></ul>
+				<ul> <?php echo $this->Form->control(('adress'), ['class' => 'form-control', 'label' => ['text' => 'Adresse', 'class' => 'form-label']]); ?></ul>
+				<ul> <?php echo $this->Form->control('coach_id', ['class' => 'form-select',  'empty' => true, 'label' => ['text' => 'Trainer', 'class' => 'form-label']]); ?></ul>
+				<ul class="mb-2"> <?php echo $this->Form->control('youth', ['class' => 'form-select',  'empty' => true, 'label' => ['text' => 'Jugend', 'class' => 'form-label']]); ?></ul>
 			</ul>
 		</div>
 	</fieldset>

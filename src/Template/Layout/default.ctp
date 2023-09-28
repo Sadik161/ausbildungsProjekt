@@ -39,6 +39,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 </head>
 
 <body>
+	<!-- <img src="/img/Download.png" alt="" style="background-size: cover;"> -->
 	<nav class="navbar" style="background-color: #fd7e14;">
 		<a href="/users/home">
 			<img class="mx-3" src="/img/logo.svg" alt="TSG" height="70px" width="auto">
@@ -66,7 +67,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					'aria-current' => 'page'
 				]); ?>
 				<div class="dropdown">	
-					<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:var(--bs-nav-link-color);">
+					<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
 						<?= __('Abteilung') ?>
 					</button>
 					<ul class="dropdown-menu">
@@ -77,9 +78,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					</ul>
 				</div>
 				<?php if ($this->request->session()->read('Auth.User')): ?>
-					<li class="nav-item"><a href="/users/logout" class="nav-link" aria-current="page">Logout</a></li>
+					<li class="nav-item"><a href="/users/logout" class="nav-link" aria-current="page" style="color: black;">Logout</a></li>
 				<?php else : ?>
-					<li class="nav-item"><a href="/users/login" class="nav-link" aria-current="page">Login</a></li>
+					<li class="nav-item"><a href="/users/login" class="nav-link" aria-current="page" style="color: black;">Login</a></li>
 				<?php endif; ?>
 			</ul>
 		</div>
