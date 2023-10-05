@@ -21,21 +21,15 @@
 <div class="clubs form large-9 medium-8 columns content">
 	<?= $this->Form->create($club) ?>
 	<fieldset>
-		<legend><?= __('Edit Coach') ?></legend>
-		<table class="table">
-			<tr>
-				<td> <?php echo $this->Form->control('name'); ?></td>
-			</tr>
-			<tr>
-				<td> <?php echo $this->Form->control('adress');?></td>
-			</tr>
-			<tr>
-				<td> <?php echo $this->Form->control('coach_id', ['options' => $coaches, 'empty' => true]); ?></td>
-			</tr>
-			<tr>
-				<td> <?php echo $this->Form->control('teams_id', ['options' => $teams, 'empty' => true]); ?></td>
-			</tr>
-		</table>
+		<div class="card">
+			<legend class="card-header"><?= __('Verein bearbeiten') ?></legend>
+			<ul class="list-group list-group-flush card-body" style="box-sizing: border-box; width: 95%">
+				<ul> <?php echo $this->Form->control(('name'), ['class' => 'form-control', 'label' => ['class' => 'form-label']]); ?></ul>
+				<ul> <?php echo $this->Form->control(('adress'), ['class' => 'form-control', 'label' => ['text' => 'Adresse', 'class' => 'form-label']]); ?></ul>
+				<ul> <?php  echo $this->Form->control('coach_id', ['options' => $coaches, 'empty' => true, 'class' => 'form-control', 'label' => ['text' => 'Trainer', 'class' => 'form-label']]);?></ul>
+				<ul class="mb-3"> <?php  echo $this->Form->control('teams_id', ['options' => $teams, 'empty' => true, 'class' => 'form-control', 'label' => ['text' => 'Mannschaft', 'class' => 'form-label']]);?></ul>
+			</ul>
+		</div>
 	</fieldset>
 	<?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success']) ?>
 	<?= $this->Form->end() ?>

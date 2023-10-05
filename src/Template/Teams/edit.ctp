@@ -19,24 +19,16 @@
 <div class="teams form large-9 medium-8 columns content">
     <?= $this->Form->create($team) ?>
     <fieldset>
-		<legend><?= __('Edit Team') ?></legend>
-		<table class="table">
-			<tr>
-				<td> <?php echo $this->Form->control('youth'); ?></td>
-			</tr>
-			<tr>
-				<td> <?php  echo $this->Form->control('coach_id');?></td>
-			</tr>
-			<tr>
-				<td> <?php echo $this->Form->control('total_players');?></td>
-			</tr>
-            <tr>
-				<td> <?php echo $this->Form->control('time'); ?></td>
-			</tr>
-            <tr>
-				<td> <?php echo $this->Form->control('field'); ?></td>
-			</tr>
-		</table>
+		<div class="card">
+			<legend class="card-header"><?= __('Edit Team') ?></legend>
+			<ul class="list-group list-group-flush card-body" style="box-sizing: border-box; width: 95%">
+				<ul class="mb-2"> <?php echo $this->Form->control('youth', ['class' => 'form-select',  'empty' => true, 'label' => ['text' => 'Jugend', 'class' => 'form-label']]); ?></ul>
+				<ul> <?php  echo $this->Form->control('coach_id', ['options' => $coaches,  'class' => 'form-control', 'label' => ['text' => 'Trainer', 'class' => 'form-label']]);?></ul>
+				<ul> <?php echo $this->Form->control(('total_players'), ['class' => 'form-control', 'label' => ['text' => 'Anzahl der Spieler', 'class' => 'form-label']]); ?></ul>
+				<ul> <?php echo $this->Form->control(('time'), ['class' => 'form-control', 'label' => ['text' => 'Uhrzeit', 'class' => 'form-label']]); ?></ul>
+				<ul> <?php echo $this->Form->control(('field'), ['class' => 'form-control', 'label' => ['text' => 'Feld', 'class' => 'form-label']]); ?></ul>
+			</ul>
+		</div>
 	</fieldset>
     <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success']) ?>
     <?= $this->Form->end() ?>
