@@ -18,8 +18,6 @@
 				<th scope="col"><?= $this->Paginator->sort('id') ?></th>
 				<th scope="col"><?= $this->Paginator->sort('name') ?></th>
 				<th scope="col"><?= $this->Paginator->sort('adress') ?></th>
-				<th scope="col"><?= $this->Paginator->sort('coach_id') ?></th>
-				<th scope="col"><?= $this->Paginator->sort('teams_id') ?></th>
 				<th scope="col" class="actions"><?= __('Actions') ?></th>
 			</tr>
 		</thead>
@@ -29,8 +27,6 @@
 				<td><?= $this->Number->format($clubs->id) ?></td>
 				<td><?= h($clubs->name) ?></td>
 				<td><?= h($clubs->adress) ?></td>
-				<td><?= $clubs->has('coach') ? $this->Html->link($clubs->coach->name, ['controller' => 'Coaches', 'action' => 'view', $clubs->coach->id]) : '' ?></td>
-				<td><?= $clubs->has('team') ? $this->Html->link($clubs->team->youth, ['controller' => 'Teams', 'action' => 'view', $clubs->team->id]) : '' ?></td>
 				<td class="actions">
 					<?= $this->Html->link(__('View'), ['action' => 'view', $clubs->id], ['class' => 'btn btn-primary btn-sm']) ?>
 					<?= $this->Html->link(__('Edit'), ['action' => 'edit', $clubs->id], ['class' => 'btn btn-warning btn-sm']) ?>

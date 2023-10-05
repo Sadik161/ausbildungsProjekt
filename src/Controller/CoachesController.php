@@ -85,7 +85,8 @@ class CoachesController extends AppController
 			}
 			$this->Flash->error(__('The coach could not be saved. Please, try again.'));
 		}
-		$this->set(compact('coach'));
+		$teams = $this->Coaches->Teams->find('list', ['limit' => 200]);
+		$this->set(compact('coach', 'teams'));
 	}
 
 	/**

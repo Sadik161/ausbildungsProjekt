@@ -22,7 +22,11 @@
 		<div class="card">
 			<legend class="card-header"><?= __('Edit Team') ?></legend>
 			<ul class="list-group list-group-flush card-body" style="box-sizing: border-box; width: 95%">
-				<ul class="mb-2"> <?php echo $this->Form->control('youth', ['class' => 'form-select',  'empty' => true, 'label' => ['text' => 'Jugend', 'class' => 'form-label']]); ?></ul>
+				<ul> <?php  echo $this->Form->control('team_id', [
+					'options' => $teams,
+					'class' => 'form-control',
+					'label' => ['text' => 'Mannschaft', 'class' => 'form-label']
+				]);?></ul>
 				<ul> <?php  echo $this->Form->control('coach_id', ['options' => $coaches,  'class' => 'form-control', 'label' => ['text' => 'Trainer', 'class' => 'form-label']]);?></ul>
 				<ul> <?php echo $this->Form->control(('total_players'), ['class' => 'form-control', 'label' => ['text' => 'Anzahl der Spieler', 'class' => 'form-label']]); ?></ul>
 				<ul> <?php echo $this->Form->control(('time'), ['class' => 'form-control', 'label' => ['text' => 'Uhrzeit', 'class' => 'form-label']]); ?></ul>

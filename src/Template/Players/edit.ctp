@@ -23,7 +23,7 @@
 		<legend class="card-header"><?= __('Spieler bearbeiten') ?></legend>
 			<ul class="list-group list-group-flush card-body" style="box-sizing: border-box; width: 95%">
 				<ul> <?php echo $this->Form->control(('name'), ['class' => 'form-control', 'label' => ['class' => 'form-label']]); ?></ul>
-				<ul> <?php  echo $this->Form->control('team_id', ['options' => $teams, 'empty' => true, 'class' => 'form-control', 'label' => ['text' => 'Mannschaft', 'class' => 'form-label']]);?></ul>
+				<ul> <?php  echo $this->Form->control('team_id', ['options' => $teams, 'class' => 'form-control', 'label' => ['text' => 'Mannschaft', 'class' => 'form-label']]);?></ul>
 				<ul>
 					<div class="form-group">
 						<label for="joined" class="form-label">Beigetreten</label>
