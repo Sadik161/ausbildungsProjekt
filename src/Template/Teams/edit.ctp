@@ -6,9 +6,9 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-            <?= $this->Html->link(__('List Teams'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
+            <?= $this->Html->link(__('Liste der Teams'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
             <?= $this->Form->postLink(
-                    __('Delete'),
+                    __('Team löschen'),
                     ['action' => 'delete', $team->id], 
 					['class' => 'btn btn-danger mt-3'],
                     ['confirm' => __('Are you sure you want to delete # {0}?', $team->id)]
@@ -20,7 +20,7 @@
     <?= $this->Form->create($team) ?>
     <fieldset>
 		<div class="card">
-			<legend class="card-header"><?= __('Edit Team') ?></legend>
+			<legend class="card-header"><?= __('Team bearbeiten') ?></legend>
 			<ul class="list-group list-group-flush card-body" style="box-sizing: border-box; width: 95%">
 				<ul> <?php  echo $this->Form->control('team_id', [
 					'options' => $teams,
@@ -34,6 +34,6 @@
 			</ul>
 		</div>
 	</fieldset>
-    <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success']) ?>
+    <?= $this->Form->button(__('Speichern'), ['class' => 'btn btn-success']) ?>
     <?= $this->Form->end() ?>
 </div>

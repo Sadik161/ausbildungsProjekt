@@ -6,14 +6,9 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
 	<ul class="side-nav">
-            <?= $this->Html->link(__('List Players'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
-			<?= $this->Html->link(__('Edit this Player'), ['action' => 'edit', $player->id], ['class' => 'btn btn-warning mt-3']) ?>
-            <?= $this->Form->postLink(__('Delete this Player'), ['action' => 'delete', $player->id], ['class' => 'btn btn-danger mt-3'],  ['confirm' => __('Are you sure you want to delete # {0}?', $player->id)]) ?>
-            <?php
-            echo $this->Form->create(null, ['type' => 'file']);
-            echo $this->Form->control('image', ['type' => 'file']);
-            echo $this->Form->button('Hochladen');
-            echo $this->Form->end(); ?>
+            <?= $this->Html->link(__('Liste der Spieler'), ['action' => 'index'], ['class' => 'btn btn-primary mt-3']) ?>
+			<?= $this->Html->link(__('Spieler bearbeiten'), ['action' => 'edit', $player->id], ['class' => 'btn btn-warning mt-3']) ?>
+            <?= $this->Form->postLink(__('Spieler löschen'), ['action' => 'delete', $player->id], ['class' => 'btn btn-danger mt-3'],  ['confirm' => __('Are you sure you want to delete # {0}?', $player->id)]) ?>
 	</ul>
 </nav>
 <div class="players view large-9 medium-8 columns content">
@@ -36,7 +31,7 @@
             <td><?= $this->Number->format($player->id) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Joined') ?></th>
+            <th scope="row"><?= __('Beigetreten') ?></th>
             <td><?= h($player->joined) ?></td>
         </tr>
     </table>
